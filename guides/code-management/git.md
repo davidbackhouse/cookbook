@@ -80,6 +80,7 @@ will make comments and ask questions via the web interface, or discuss it with y
 ## Merge
 
 Rebase your branch interactively to squash un-necessary commits like "Remove whitespace".
+Keep your commits atomic as posible, it does not mean to have one commit for the entire pull request.
 
 ```
 git fetch origin
@@ -95,6 +96,7 @@ git push -f
 [find the pull request]: http://stackoverflow.com/a/17819027
 
 Double check your commits, scan the files you changed and merge in to master!
+Use the console to merge your branch. This avoids adding the `pull request merge commit` that appears when merging from Github, helping to keep cleaner the history of commits.
 
 ```
 git log origin/master..${branch-name}
